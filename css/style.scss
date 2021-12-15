@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial';
+}
+
+.top-nav {
+    overflow: hidden;
+    width: 100%;
+    .nav {
+        float: right;
+        padding: 5px;
+        a {
+            float: left;
+            text-decoration: none;
+            color: black;
+            font-size: 13px;
+            margin: 12px 11px;
+            img {
+                width: 30px;
+                height: 30px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+        .apps-menu {
+            position: relative;
+            svg {
+                margin-top: 7px;
+            }
+            .tooltiptext {
+                visibility: hidden;
+                width: 120px;
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                position: absolute;
+                z-index: 1;
+                top: 100%;
+                left: 50%;
+                margin-left: -60px;
+            }
+        }
+        .apps-menu:hover .tooltiptext {
+            visibility: visible;
+            transition-delay: 2s;
+        }
+        .text {
+            margin-top: 20px;
+        }
+        .text:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.middle {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    /*.google-lg {
+        font-size: 90px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        font-family: 'Alata';
+        letter-spacing: -3px;
+    }*/
+    img {
+        margin-bottom: 25px;
+    }
+    #searchBar {
+        width: 40vw;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('../images/searchicon.png');
+        background-position: 15px 13px;
+        background-size: 15px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        border-radius: 26px;
+        outline: none;
+    }
+    #searchBar:hover {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    }
+    .btns {
+        margin-top: 10px;
+        input[type=button] {
+            padding: 8px 15px;
+            border: none;
+            margin: 20px 5px;
+            font-size: 14px;
+            background-color: #f8f9fa;
+            cursor: pointer;
+            border-radius: 4px;
+            color: #3c4043;
+            border: 1px solid #f8f9fa;
+        }
+        input[type=button]:hover {
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+            border: 1px solid #ccc;
+        }
+    }
+    .lang {
+        font-size: 14px;
+        a {
+            margin: 0 3px;
+        }
+    }
+}
+
+.footer {
+    overflow: hidden;
+    width: 100%;
+    background-color: #f2f2f2;
+    color: rgba(0, 0, 0, .54);
+    position: absolute;
+    bottom: 0;
+    font-size: 15px;
+    .country {
+        border-bottom: 1px solid #dadce0;
+        padding: 0 30px;
+    }
+    .nav {
+        overflow: hidden;
+        margin-left: 20px;
+        a {
+            float: left;
+            margin: 15px 15px 15px 15px;
+            text-decoration: none;
+            color: rgba(0, 0, 0, .54);
+            font-size: 14px;
+        }
+        .right {
+            float: right;
+            margin-right: 20px;
+        }
+    }
+}
