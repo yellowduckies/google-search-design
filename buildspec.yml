@@ -10,4 +10,4 @@ phases:
     - echo "Deployed to S3"
 artifacts:
   files:
-    - '**/*'
+  - '**/*'
